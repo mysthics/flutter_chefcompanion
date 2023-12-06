@@ -17,7 +17,7 @@ class CCListTile extends StatelessWidget {
     return ListTile(
       leading: Icon(
         icon,
-        color: Colors.grey,
+        color: Colors.black,
       ),
       title: Text(text),
       onTap: onTap,

@@ -25,7 +25,7 @@ class CCDrawer extends StatelessWidget {
               const SizedBox(height: 25),
               CCListTile(
                 text: "Menu",
-                icon: Icons.menu,
+                icon: Icons.restaurant,
                 onTap: () => Navigator.pop(context),
               ),
               CCListTile(
@@ -38,15 +38,14 @@ class CCDrawer extends StatelessWidget {
               ),
             ],
           ),
-
           Padding(
             padding: const EdgeInsets.all(25.0),
             child: CCListTile(
-                  text: "Exit",
-                  icon: Icons.exit_to_app,
-                  onTap: () => Navigator.pushNamedAndRemoveUntil
-                  (context, '/intro_screen', (route) => false),
-                ),
+              text: "Exit",
+              icon: Icons.exit_to_app,
+              onTap: () => Navigator.pushNamedAndRemoveUntil(
+                  context, '/intro_screen', (route) => false),
+            ),
           ),
         ],
       ),
